@@ -1,13 +1,29 @@
+section {
+    border: 2px solid red;
+    
 
-    section{
-        border: 2px solid red;
-        display: flex;
-        justify-content: center;
-    }
-    div{
-        border: 2px solid rgb(0, 163, 74);
-        height: 100px;
-        width: 50%;
-        background-color: rgba(128, 212, 3, 0.258);
-        text-align: center;
-    }
+}
+
+div {
+    border: 2px solid rgb(0, 163, 74);
+    height: 100px;
+    width: 100%;
+    background-color: rgba(128, 212, 3, 0.258);
+    text-align: center;
+}
+
+#normal_date {
+    border: 2px solid hotpink;
+    background-color: aqua;
+    color: black;
+    font-size: 62px;
+
+}
+#displayTime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: coral;
+
+}

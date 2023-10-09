@@ -1,34 +1,49 @@
-let div=document.querySelector("div")
-let button=document.querySelector("button")
+let displayTime = document.querySelector("#displayTime")
+let button = document.querySelector("button")
 
-// let time=new Date()
-
-// let date=time.getDate()    
-// let day=time.getMonth()
-// let year=time.getFullYear()
-// let hourse=time.getHours()
-// let minutes=time.getMinutes()
-// let seconds=time.getSeconds()
+let normal_date = document.getElementById("normal_date")
 
 
+function update() {
+    let d = new Date()
+    let date = d.getDate()
+    let month = d.getMonth()
+    let year = d.getFullYear()
+    let hourse = d.getHours()
+    let minutes = d.getMinutes()
+    let seconds = d.getSeconds()
+    let day=d.getDay()
 
-// console.log(date,day,year,hourse,minutes,seconds);
+    let array=["sunday","Monday","tuesday","wednesday","thursday","friday","saturday",]
 
+    if(true)
+    {
+        day=array[day]
+    }
+    // console.log(date,day,year,hourse,minutes,seconds);
+
+    
+    normal_date.innerHTML=`<span>${date} /</span>
+    <span>${month+1} /</span>
+    <span>${year}</span>
+    <span>${day}</span>`
+
+    displayTime.innerHTML =
+     `
+    <span>${hourse}:</span>
+    <span>${minutes}:</span>
+    <span>${seconds}</span>`         
+}
+
+setInterval(update, 1000)
+
+// let count=0
 // function update()
 // {
-//    div.innerHTML=`<h1>${seconds}</h1>`
-//    console.log(seconds);
+//     count++
+//     // console.log(count++);
+//     console.log(count);
+
+//     div.innerHTML=`${count}`
 // }
-
 // setInterval(update,1000)
-
-let count=0
-function update()
-{
-    count++
-    // console.log(count++);
-    console.log(count);
-
-    div.innerHTML=`${count}`
-}
-setInterval(update,1000)
