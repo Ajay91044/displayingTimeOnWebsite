@@ -16,14 +16,14 @@ div {
     border: 2px solid hotpink;
     background-color: aqua;
     color: black;
-    font-size: 62px;
+    font-size: 280%;
 
 }
 #displayTime{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 474%;
     color: coral;
 
 }
